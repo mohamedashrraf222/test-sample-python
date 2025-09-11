@@ -1,0 +1,27 @@
+# pyproject.toml
+
+[project]
+name = "number-guesser"
+version = "0.1.0"
+description = "A simple number guessing game."
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md" # This would be for a full package
+requires-python = ">=3.8"
+
+# No external dependencies are needed for this project.
+# If you needed one, like the 'requests' library, you would add it here:
+# dependencies = [
+#   "requests",
+# ]
+
+[project.scripts]
+# This creates a command-line script called 'guess-game'
+# that will run the 'main' function from the 'app.main' module.
+guess-game = "app.main:main"
+[tool.codeflash]
+# All paths are relative to this pyproject.toml's directory.
+module-root = "app"
+tests-root = "tests"
+test-framework = "pytest"
+ignore-paths = []
+formatter-cmds = ["disabled"]
