@@ -3,7 +3,7 @@
 [project]
 name = "number-guesser"
 version = "0.1.0"
-description = "A simple number guessing game."
+description = "Non-interactive numeric processing script with reusable functions."
 authors = [{ name = "Your Name", email = "you@example.com" }]
 readme = "README.md" # This would be for a full package
 requires-python = ">=3.8"
@@ -15,9 +15,8 @@ requires-python = ">=3.8"
 # ]
 
 [project.scripts]
-# This creates a command-line script called 'guess-game'
-# that will run the 'main' function from the 'app.main' module.
-guess-game = "app.main:main"
+# CLI entry to run the non-interactive processor
+number-processor = "app.main:main"
 [tool.codeflash]
 # All paths are relative to this pyproject.toml's directory.
 module-root = "app"
